@@ -1,0 +1,26 @@
+<h1>
+  Place your order here
+</h1>
+<form action="/sendOrder" method="post">
+  <div class="mb-3">
+    <label for="orderNo" class="form-label">Order No.</label>
+    <input type="number" class="form-control" id="orderNo" />
+  </div>
+  <div class="mb-3">
+    <label for="itemDesc" class="form-label">Item Description</label>
+    <input type="text" class="form-control" id="itemDesc" />
+  </div>
+  <div class="mb-3">
+    <label for="quantity" class="form-label">Quantity (Range : 0-50)</label>
+    <input type="range" class="form-control" id="quantity" min="0" max="50"/>
+  </div>
+  <div class="mb-3">
+    <label for="priceInRs" class="form-label">Price in Rs.</label>
+    <input type="number" class="form-control" id="priceInRs" />
+  </div>
+  <div class="mb-3">
+    <label for="email" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="email" />
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
